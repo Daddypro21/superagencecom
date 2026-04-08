@@ -1,0 +1,551 @@
+<!doctype html>
+
+<html class="light" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700;800&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#44474d",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#d9e3f7",
+              "tertiary-container": "#3a2800",
+              "primary-container": "#1a2b47",
+              "inverse-primary": "#b6c7ea",
+              "tertiary-fixed": "#ffdea5",
+              "outline-variant": "#c5c6ce",
+              "surface-variant": "#e0e3e5",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#374765",
+              primary: "#031631",
+              background: "#f7f9fb",
+              outline: "#75777e",
+              "on-primary-container": "#8293b4",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "surface-container-highest": "#e0e3e5",
+              "surface-tint": "#4e5f7d",
+              secondary: "#555f70",
+              "on-secondary-fixed-variant": "#3d4757",
+              "on-secondary-container": "#596374",
+              "on-tertiary-container": "#b08d48",
+              surface: "#f7f9fb",
+              "on-surface": "#191c1e",
+              "on-secondary-fixed": "#121c2a",
+              "on-tertiary-fixed": "#261900",
+              "surface-container-high": "#e6e8ea",
+              "surface-container-low": "#f2f4f6",
+              "inverse-surface": "#2d3133",
+              "on-primary-fixed": "#081b37",
+              "tertiary-fixed-dim": "#e9c176",
+              "on-error": "#ffffff",
+              "on-background": "#191c1e",
+              "primary-fixed": "#d6e3ff",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "surface-dim": "#d8dadc",
+              error: "#ba1a1a",
+              "inverse-on-surface": "#eff1f3",
+              "secondary-fixed-dim": "#bdc7db",
+              "primary-fixed-dim": "#b6c7ea",
+              "surface-container": "#eceef0",
+              "surface-bright": "#f7f9fb",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#d6e0f4",
+              tertiary: "#201500",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 300,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .serif-anchor {
+        font-family: "Noto Serif", serif;
+      }
+      .sans-anchor {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface sans-anchor selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed"
+  >
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+      <div
+        class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
+      >
+        <div class="text-xl font-bold font-['Noto_Serif'] text-[#031631]">
+          Super AgenceCom
+        </div>
+        <div
+          class="hidden md:flex items-center space-x-10 font-['Noto_Serif'] font-medium tracking-tight"
+        >
+          <a
+            class="text-[#596374] hover:text-[#031631] transition-colors"
+            href="index.html"
+            >Accueil</a
+          >
+          <a
+            class="text-[#031631] border-b-2 border-[#031631] pb-1"
+            href="services.html"
+            >Services</a
+          >
+          <a
+            class="text-[#596374] hover:text-[#031631] transition-colors"
+            href="etudes.html"
+            >Études de cas</a
+          >
+          <a
+            class="text-[#596374] hover:text-[#031631] transition-colors"
+            href="apropos.html"
+            >À propos</a
+          >
+        </div>
+        <button
+          class="bg-[#031631] text-white px-6 py-2.5 rounded-sm text-sm font-medium hover:opacity-80 transition-opacity duration-300 active:scale-95 transition-transform duration-200"
+        >
+          <a href="contact.html">Contactez-nous</a>
+        </button>
+      </div>
+    </nav>
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section class="relative py-24 px-8 overflow-hidden bg-surface">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16"
+        >
+          <div class="w-full md:w-1/2">
+            <span
+              class="text-tertiary-fixed-dim font-bold tracking-widest uppercase text-xs mb-4 block"
+              >Expertise &amp; Savoir-faire</span
+            >
+            <h1
+              class="text-5xl md:text-7xl font-headline font-extrabold text-primary leading-tight mb-8"
+            >
+              L'Architecture de votre
+              <span class="italic text-tertiary-fixed-dim">Influence</span>
+            </h1>
+            <p
+              class="text-lg text-on-surface-variant max-w-lg mb-10 leading-relaxed"
+            >
+              Nous façonnons des stratégies sur-mesure pour les institutions et
+              les marques d'excellence. Notre approche fusionne rigueur
+              analytique et créativité éditoriale.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 aspect-square relative">
+            <div
+              class="absolute inset-0 bg-primary-container rounded-sm transform translate-x-4 translate-y-4"
+            ></div>
+            <img
+              class="relative z-10 w-full h-full object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-700"
+              data-alt="Interior view of a minimalist, modern architectural office with large windows, clean lines, and soft natural lighting"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuARg27pThgfKIsGH_NShosCGrFRATmF2DZU0qXscbreFRGUPtxToFxsmUhHbLhK1XNcE1JMkIqlDPik2a51L4BtbVDFcyK1DDE-If5YwpptJV2Ui5Z6_f_1SAw_ld9nSqhQu04BGQJJoSP9UD8fiu_Gz9AcTn9DIOb3zQMqlx-tP0RzxPb8QI_7BfAaHlfQ18fZeOix9mJX4-gJFvbBVh2L12hNT2Uf6xgGeOzroYyaEVoUMg335HZpZGLJOqU6s9WReKxzfQrjqws"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Service 1: Conseil Stratégique -->
+      <section class="py-32 px-8 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row gap-16 items-start">
+            <div class="md:w-1/3">
+              <div class="text-primary-container mb-6">
+                <span
+                  class="material-symbols-outlined text-5xl"
+                  data-icon="account_balance"
+                  >account_balance</span
+                >
+              </div>
+              <h2 class="text-3xl font-headline font-bold text-primary mb-6">
+                Conseil Stratégique
+              </h2>
+              <p class="text-on-surface-variant leading-relaxed mb-8">
+                Anticiper les mutations du marché et définir une trajectoire de
+                croissance pérenne à travers une analyse rigoureuse des
+                écosystèmes.
+              </p>
+              <ul class="space-y-4">
+                <li
+                  class="flex items-center gap-3 text-sm font-semibold uppercase tracking-wider text-primary"
+                >
+                  <span class="w-1.5 h-1.5 bg-tertiary-fixed-dim"></span> Audit
+                  de Positionnement
+                </li>
+                <li
+                  class="flex items-center gap-3 text-sm font-semibold uppercase tracking-wider text-primary"
+                >
+                  <span class="w-1.5 h-1.5 bg-tertiary-fixed-dim"></span>
+                  Intelligence de Marché
+                </li>
+                <li
+                  class="flex items-center gap-3 text-sm font-semibold uppercase tracking-wider text-primary"
+                >
+                  <span class="w-1.5 h-1.5 bg-tertiary-fixed-dim"></span>
+                  Roadmap de Transformation
+                </li>
+              </ul>
+            </div>
+            <div class="md:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div
+                class="bg-surface-container-lowest p-10 rounded-sm hover:shadow-xl transition-shadow duration-500"
+              >
+                <span
+                  class="text-xs font-bold text-tertiary-fixed-dim uppercase tracking-widest block mb-4"
+                  >Avantage 01</span
+                >
+                <h3 class="text-xl font-headline font-bold mb-4">
+                  Clarté Décisionnelle
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Simplifier la complexité pour des décisions d'affaires agiles
+                  et sécurisées.
+                </p>
+              </div>
+              <div
+                class="bg-surface-container-lowest p-10 rounded-sm hover:shadow-xl transition-shadow duration-500"
+              >
+                <span
+                  class="text-xs font-bold text-tertiary-fixed-dim uppercase tracking-widest block mb-4"
+                  >Avantage 02</span
+                >
+                <h3 class="text-xl font-headline font-bold mb-4">
+                  Vision Long Terme
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">
+                  Sortir du court-termisme pour bâtir un avantage compétitif
+                  durable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service 2: Communication Digitale (Alternée / Bento) -->
+      <section class="py-32 px-8 bg-surface">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <div
+              class="md:col-span-8 bg-primary-container text-white p-16 rounded-sm relative overflow-hidden flex flex-col justify-end min-h-[400px]"
+            >
+              <div class="absolute top-0 right-0 p-8 opacity-20">
+                <span
+                  class="material-symbols-outlined text-[12rem]"
+                  data-icon="digital_out-of-home"
+                  >digital_out_of_home</span
+                >
+              </div>
+              <div class="relative z-10 max-w-xl">
+                <h2 class="text-4xl font-headline font-bold mb-6">
+                  Communication Digitale
+                </h2>
+                <p class="text-on-primary-container text-lg mb-8">
+                  Maîtriser les récits numériques pour engager vos audiences là
+                  où elles se trouvent, avec une précision chirurgicale et une
+                  élégance visuelle.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                  <span
+                    class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest"
+                    >E-Réputation</span
+                  >
+                  <span
+                    class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest"
+                    >Content Strategy</span
+                  >
+                  <span
+                    class="bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest"
+                    >Growth Hacking</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              class="md:col-span-4 bg-surface-container-low p-12 rounded-sm flex flex-col justify-center"
+            >
+              <h4
+                class="text-sm font-bold uppercase tracking-[0.2em] text-tertiary-fixed-dim mb-6"
+              >
+                Performance
+              </h4>
+              <div class="space-y-10">
+                <div>
+                  <span class="text-4xl font-headline font-bold text-primary"
+                    >+140%</span
+                  >
+                  <p
+                    class="text-xs font-bold text-on-surface-variant uppercase mt-2"
+                  >
+                    Engagement Moyen
+                  </p>
+                </div>
+                <div>
+                  <span class="text-4xl font-headline font-bold text-primary"
+                    >Top 1%</span
+                  >
+                  <p
+                    class="text-xs font-bold text-on-surface-variant uppercase mt-2"
+                  >
+                    Visibilité Sectorielle
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service 3: Branding & Identité -->
+      <section class="py-32 px-8 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+          <div class="flex flex-col md:flex-row-reverse gap-16 items-center">
+            <div class="md:w-1/2">
+              <div class="inline-block p-4 bg-white mb-8 shadow-sm">
+                <span
+                  class="material-symbols-outlined text-4xl text-primary"
+                  data-icon="brush"
+                  >brush</span
+                >
+              </div>
+              <h2 class="text-4xl font-headline font-bold text-primary mb-6">
+                Branding &amp; Identité
+              </h2>
+              <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                Créer des codes visuels et sémantiques qui imposent le respect.
+                Nous ne créons pas seulement des logos, nous bâtissons des
+                symboles d'autorité.
+              </p>
+              <div class="grid grid-cols-2 gap-x-8 gap-y-6">
+                <div>
+                  <h5 class="text-sm font-bold uppercase tracking-widest mb-2">
+                    Héritage
+                  </h5>
+                  <p class="text-sm text-on-surface-variant">
+                    Intégrer vos valeurs historiques dans un design
+                    contemporain.
+                  </p>
+                </div>
+                <div>
+                  <h5 class="text-sm font-bold uppercase tracking-widest mb-2">
+                    Exclusivité
+                  </h5>
+                  <p class="text-sm text-on-surface-variant">
+                    Un langage visuel unique qui vous distingue radicalement.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-1/2">
+              <img
+                class="w-full h-[500px] object-cover rounded-sm"
+                data-alt="Close up of high-end stationery with gold foil embossing and elegant serif typography on textured paper"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo-Z27oX_gDbhY2xMuXFOGnRjfqXrenHWCSoUFFLLvAk3LVP6HQ0FuxSUt3WoNH13FjZCOlsJcq9tuq763wftRSx-dqL34pkcE8dLPC8LNd6qVG7C5q3WOSPW8-A-pavagqD4n8cE8R5jf03Lp5u5_QbGbotVu-W8uQjBLpJefm2KLYEW6SE328EGR_cF7HDYHWK-on-0QJubyIiMIbGmO0bHFZwvz9vAPXPQKnzpPszOH82CAuAR03QfLVFiBvZkESMD_LQfkLBs"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service 4: Gestion de Crise -->
+      <section class="py-32 px-8 bg-primary text-white">
+        <div class="max-w-7xl mx-auto text-center">
+          <div class="mb-12">
+            <span
+              class="material-symbols-outlined text-6xl text-tertiary-fixed-dim"
+              data-icon="shield_with_heart"
+              >shield_with_heart</span
+            >
+          </div>
+          <h2 class="text-4xl font-headline font-bold mb-6">
+            Gestion de Crise
+          </h2>
+          <p class="text-on-primary-container max-w-2xl mx-auto text-lg mb-16">
+            Protéger votre réputation lorsque les enjeux sont les plus élevés.
+            Notre cellule d'intervention agit avec discrétion, rapidité et
+            autorité stratégique.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-white/10">
+            <div class="p-12 bg-primary">
+              <h4 class="text-xl font-headline font-bold mb-4">
+                Réponse Immédiate
+              </h4>
+              <p class="text-sm text-on-primary-container">
+                Activation d'un protocole d'urgence sous 2 heures pour
+                stabiliser la situation.
+              </p>
+            </div>
+            <div class="p-12 bg-primary">
+              <h4 class="text-xl font-headline font-bold mb-4">
+                Media Training
+              </h4>
+              <p class="text-sm text-on-primary-container">
+                Préparation intensive des porte-paroles pour maîtriser le récit
+                médiatique.
+              </p>
+            </div>
+            <div class="p-12 bg-primary">
+              <h4 class="text-xl font-headline font-bold mb-4">
+                Analyse d'Impact
+              </h4>
+              <p class="text-sm text-on-primary-container">
+                Suivi post-crise et reconstruction de l'image de marque à long
+                terme.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-24 px-8 bg-surface-container-highest">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-headline font-bold text-primary mb-8">
+            Prêt à redéfinir votre autorité ?
+          </h2>
+          <div class="flex flex-col sm:flex-row justify-center gap-6">
+            <button
+              class="bg-primary text-white px-10 py-4 font-bold text-sm tracking-[0.2em] uppercase rounded-sm hover:opacity-90 transition-opacity"
+            >
+              Prendre rendez-vous
+            </button>
+            <button
+              class="border-b-2 border-primary text-primary px-10 py-4 font-bold text-sm tracking-[0.2em] uppercase hover:bg-primary hover:text-white transition-all"
+            >
+              Nos réalisations
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#f7f9fb] text-[#031631] border-t-0">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-20"
+      >
+        <div class="col-span-1 md:col-span-1">
+          <div class="text-lg font-bold font-['Noto_Serif'] mb-6">
+            Super AgenceCom
+          </div>
+          <p
+            class="text-[#596374] text-xs font-['Manrope'] uppercase tracking-widest leading-relaxed"
+          >
+            Conseil de haute direction pour leaders visionnaires.
+          </p>
+        </div>
+        <div>
+          <h4
+            class="font-['Manrope'] text-sm uppercase tracking-widest font-bold mb-6"
+          >
+            Expertises
+          </h4>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="text-[#596374] text-sm uppercase tracking-widest hover:underline decoration-[#e9c176] underline-offset-4"
+                href="#"
+                >Stratégie</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#596374] text-sm uppercase tracking-widest hover:underline decoration-[#e9c176] underline-offset-4"
+                href="#"
+                >Digital</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#596374] text-sm uppercase tracking-widest hover:underline decoration-[#e9c176] underline-offset-4"
+                href="#"
+                >Identité</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="font-['Manrope'] text-sm uppercase tracking-widest font-bold mb-6"
+          >
+            Réseau
+          </h4>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="text-[#596374] text-sm uppercase tracking-widest hover:underline decoration-[#e9c176] underline-offset-4"
+                href="#"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#596374] text-sm uppercase tracking-widest hover:underline decoration-[#e9c176] underline-offset-4"
+                href="#"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-[#596374] text-sm uppercase tracking-widest hover:underline decoration-[#e9c176] underline-offset-4"
+                href="#"
+                >Newsletter</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="font-['Manrope'] text-sm uppercase tracking-widest font-bold mb-6"
+          >
+            Contact
+          </h4>
+          <p class="text-[#596374] text-sm uppercase tracking-widest mb-2">
+            Bureau de Paris
+          </p>
+          <p class="text-[#596374] text-sm uppercase tracking-widest">
+            contact@superagence.com
+          </p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-8 pb-12">
+        <p
+          class="text-[#596374] text-xs font-['Manrope'] uppercase tracking-widest"
+        >
+          © 2024 Super AgenceCom TOUS DROITS RÉSERVÉS.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

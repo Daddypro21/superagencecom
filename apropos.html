@@ -1,0 +1,503 @@
+<!doctype html>
+
+<html class="light" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-surface-variant": "#44474d",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#d9e3f7",
+              "tertiary-container": "#3a2800",
+              "primary-container": "#1a2b47",
+              "inverse-primary": "#b6c7ea",
+              "tertiary-fixed": "#ffdea5",
+              "outline-variant": "#c5c6ce",
+              "surface-variant": "#e0e3e5",
+              "on-primary": "#ffffff",
+              "on-tertiary": "#ffffff",
+              "on-primary-fixed-variant": "#374765",
+              primary: "#031631",
+              background: "#f7f9fb",
+              outline: "#75777e",
+              "on-primary-container": "#8293b4",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "surface-container-highest": "#e0e3e5",
+              "surface-tint": "#4e5f7d",
+              secondary: "#555f70",
+              "on-secondary-fixed-variant": "#3d4757",
+              "on-secondary-container": "#596374",
+              "on-tertiary-container": "#b08d48",
+              surface: "#f7f9fb",
+              "on-surface": "#191c1e",
+              "on-secondary-fixed": "#121c2a",
+              "on-tertiary-fixed": "#261900",
+              "surface-container-high": "#e6e8ea",
+              "surface-container-low": "#f2f4f6",
+              "inverse-surface": "#2d3133",
+              "on-primary-fixed": "#081b37",
+              "tertiary-fixed-dim": "#e9c176",
+              "on-error": "#ffffff",
+              "on-background": "#191c1e",
+              "primary-fixed": "#d6e3ff",
+              "on-error-container": "#93000a",
+              "error-container": "#ffdad6",
+              "surface-dim": "#d8dadc",
+              error: "#ba1a1a",
+              "inverse-on-surface": "#eff1f3",
+              "secondary-fixed-dim": "#bdc7db",
+              "primary-fixed-dim": "#b6c7ea",
+              "surface-container": "#eceef0",
+              "surface-bright": "#f7f9fb",
+              "surface-container-lowest": "#ffffff",
+              "secondary-container": "#d6e0f4",
+              tertiary: "#201500",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+            },
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 300,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .editorial-gradient {
+        background: linear-gradient(135deg, #031631 0%, #1a2b47 100%);
+      }
+      .asymmetric-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed-dim selection:text-primary"
+  >
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
+      <div
+        class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
+      >
+        <div class="text-xl font-bold font-headline text-primary">
+          Super AgenceCom
+        </div>
+        <div
+          class="hidden md:flex items-center space-x-10 font-headline font-medium tracking-tight"
+        >
+          <a
+            class="text-secondary hover:text-primary transition-colors"
+            href="index.html"
+            >Accueil</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors"
+            href="services.html"
+            >Services</a
+          >
+          <a
+            class="text-secondary hover:text-primary transition-colors"
+            href="etudes.html"
+            >Études de cas</a
+          >
+          <a
+            class="text-primary border-b-2 border-primary pb-1"
+            href="apropos.html"
+            >À propos</a
+          >
+        </div>
+        <button
+          class="bg-primary text-on-primary px-6 py-2.5 text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300 active:scale-95 transition-transform"
+        >
+          <a href="contact.html">Contactez-nous</a>
+        </button>
+      </div>
+    </nav>
+    <main class="pt-20">
+      <!-- Hero Section: Narrative Introduction -->
+      <section class="editorial-gradient text-white py-32 px-8 overflow-hidden">
+        <div
+          class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16"
+        >
+          <div class="w-full md:w-3/5">
+            <span
+              class="font-label text-tertiary-fixed-dim uppercase tracking-[0.3em] text-xs mb-6 block"
+              >Notre Genèse</span
+            >
+            <h1 class="font-headline text-5xl md:text-7xl leading-tight mb-8">
+              Redéfinir l'autorité intellectuelle à l'ère numérique.
+            </h1>
+            <p
+              class="font-body text-xl text-on-primary-container leading-relaxed max-w-2xl"
+            >
+              Fondée à Paris, The Editorial Authority est née d'une conviction
+              simple : dans un monde saturé de bruit, seule la clarté
+              stratégique et l'élégance narrative permettent de s'imposer.
+            </p>
+          </div>
+          <div class="w-full md:w-2/5 relative">
+            <div class="aspect-[4/5] bg-surface-container-low overflow-hidden">
+              <img
+                class="w-full h-full object-cover grayscale opacity-90 hover:scale-105 transition-transform duration-500"
+                data-alt="Modern minimalist architectural office interior with high ceilings and large windows showing a Parisian skyline at dusk"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHtzlLdE0FQBFxaZsiOMLPxd-r3acDQ9ED_7Vy7F4zIGJD_yXWUnme-Fvg90utR5EzuMvdDQ7GSdtAG4w1mB_ccG-S4fpJv-5zwX_piI33DRd9s7mGZFhTsD43CaSUV9dW5ZoNWCiq8vOajNiEryqG0DCz-b13mPNjeKDEa5ZK5OH4EKW7KQalXnC_Y50Ta7ph-voX04T2XLo46jAuuK4G3MdTSZnk3TN8at_ACmjVB1S3mxu7g8jUe86KljHcrYAzNbaCeb35bAs"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mission & Values: Asymmetric Bento Grid -->
+      <section class="py-32 px-8 bg-surface">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="mb-24 flex flex-col md:flex-row justify-between items-end gap-8"
+          >
+            <div class="max-w-xl">
+              <h2 class="font-headline text-4xl mb-6">
+                Une quête de rigueur et de vision.
+              </h2>
+              <p class="text-on-secondary-container text-lg">
+                Nous ne nous contentons pas de conseiller ; nous architecturons
+                des héritages. Nos valeurs sont le socle de chaque ligne de
+                code, de chaque mot écrit, de chaque stratégie conçue.
+              </p>
+            </div>
+            <div class="hidden md:block">
+              <span class="material-symbols-outlined text-6xl text-primary/10"
+                >architecture</span
+              >
+            </div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Mission -->
+            <div
+              class="md:col-span-7 bg-surface-container-lowest p-12 flex flex-col justify-between group"
+            >
+              <div>
+                <span
+                  class="material-symbols-outlined text-primary text-4xl mb-8"
+                  >auto_awesome</span
+                >
+                <h3 class="font-headline text-3xl mb-6">Notre Mission</h3>
+                <p
+                  class="text-on-secondary-container text-lg leading-relaxed max-w-md"
+                >
+                  Élever la communication des leaders mondiaux au rang d'œuvre
+                  d'art stratégique, en alliant la précision de l'ingénierie à
+                  la poésie du récit.
+                </p>
+              </div>
+              <div class="mt-12 overflow-hidden h-64">
+                <img
+                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  data-alt="Top down view of a minimalist workspace with a fountain pen, a blank notebook, and a small architectural model"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7x_FWHbXjbumZ9ZkSe-DsqqwYx2-yfMpHpSFKUazmjVopt143Oc1NLJCcY30Qta7Y9u4FCE9YWcgwlLOyXaqGR0VgUdXZSrDkxeNrk4guUjJu8prTzt7qvyWtc_agELZYvn3HnZ6-x5VxWF0_FaKQ0PWDfk8-3wQpvdosPfuyVsgx0jKKQMKKH87X3RQ_JvbtHLPAG1pe1rMs1UjRwi_C97UoE4fPs3EEpKCJJHeKvzp05tkQSsfe1Hfww945wil2Ek-MU9TXiF4"
+                />
+              </div>
+            </div>
+            <!-- Innovation -->
+            <div class="md:col-span-5 bg-primary p-12 text-white">
+              <div class="h-full flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-label uppercase tracking-widest text-xs text-tertiary-fixed-dim mb-4"
+                  >
+                    Valeur 01
+                  </h4>
+                  <h3 class="font-headline text-3xl mb-6">Innovation</h3>
+                  <p class="text-on-primary-container leading-relaxed">
+                    L'innovation n'est pas une fin en soi, mais un levier. Nous
+                    explorons les frontières technologiques pour servir la
+                    pertinence.
+                  </p>
+                </div>
+                <div class="mt-12 border-t border-white/10 pt-8">
+                  <span class="font-headline text-5xl opacity-20">01</span>
+                </div>
+              </div>
+            </div>
+            <!-- Intégrité -->
+            <div class="md:col-span-5 bg-surface-container-low p-12">
+              <div class="h-full flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-label uppercase tracking-widest text-xs text-primary/40 mb-4"
+                  >
+                    Valeur 02
+                  </h4>
+                  <h3 class="font-headline text-3xl mb-6 text-primary">
+                    Intégrité
+                  </h3>
+                  <p class="text-on-secondary-container leading-relaxed">
+                    Une autorité sans éthique est éphémère. Nous cultivons une
+                    transparence radicale et une honnêteté intellectuelle sans
+                    compromis.
+                  </p>
+                </div>
+                <div class="mt-12 border-t border-primary/10 pt-8">
+                  <span class="font-headline text-5xl opacity-20 text-primary"
+                    >02</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Excellence -->
+            <div class="md:col-span-7 bg-surface-container-highest p-12">
+              <div class="h-full flex flex-col justify-between">
+                <div>
+                  <h4
+                    class="font-label uppercase tracking-widest text-xs text-primary/40 mb-4"
+                  >
+                    Valeur 03
+                  </h4>
+                  <h3 class="font-headline text-3xl mb-6 text-primary">
+                    Excellence
+                  </h3>
+                  <p
+                    class="text-on-secondary-container leading-relaxed max-w-sm"
+                  >
+                    Le détail est notre signature. Chaque virgule, chaque pixel,
+                    chaque décision est le fruit d'une exigence de perfection
+                    absolue.
+                  </p>
+                </div>
+                <div class="mt-12 flex justify-end">
+                  <div
+                    class="w-32 h-32 bg-tertiary-fixed-dim rounded-full flex items-center justify-center -mb-20 -mr-20"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-3xl"
+                      >verified</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Leadership Team -->
+      <section class="py-32 px-8 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-24">
+            <span
+              class="font-label text-primary uppercase tracking-[0.4em] text-xs mb-4 block"
+              >Les Visages de l'Autorité</span
+            >
+            <h2 class="font-headline text-4xl md:text-5xl">
+              Équipe de Direction
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+            <!-- Leader 1 -->
+            <div class="group">
+              <div class="aspect-[3/4] bg-surface-variant overflow-hidden mb-8">
+                <img
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  data-alt="Professional studio portrait of a mature man with a serious expression, wearing a tailored navy suit, minimalist lighting"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ckwdQ5AGvzYDEpwiNMBAEPMd_TketoepyyshaVbqE0sRdfHEb1eZ2uyB8d9DFXZ0QiqXiSMwRM3vr1zOKHIqu5VIrVQr1KznrYMhtic2yU4x_nIswKmyWHhRemobaxPQAzfh5uu7Vl7NV58e7kqYnT0L7EuWROgFP3Zq80VKTBZrLHi2tyDr4KAybnWfiJXKoK113EIUySanoDXDFqGQuUV2jBc5j29pYcatd7HDv25LKdAInV6VfTxQkxnEgjCQQkoLK8l5Pwg"
+                />
+              </div>
+              <h4 class="font-headline text-2xl mb-1">Marc-Antoine de Vigny</h4>
+              <p
+                class="font-label uppercase tracking-widest text-xs text-primary/60 mb-6"
+              >
+                Fondateur &amp; Directeur de Stratégie
+              </p>
+              <p
+                class="text-on-secondary-container text-sm leading-relaxed italic"
+              >
+                "L'autorité ne se décrète pas, elle se construit par la
+                constance du sens."
+              </p>
+            </div>
+            <!-- Leader 2 -->
+            <div class="group">
+              <div class="aspect-[3/4] bg-surface-variant overflow-hidden mb-8">
+                <img
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  data-alt="Professional portrait of a woman in her late 30s with a confident smile, wearing a cream designer blouse, soft natural lighting"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGx0KAKeRRz6WhGeg5N37IfTFjEnD6IOk0A_AKFBmNqzsYb4SuP_-1PteC16gtqNSEWYe_tgr-Izzb2gb-XkesDZ8CDo6K3hD0oJUWYsNGgrtdLQIJlppudpZwgzYiq3cwYrzXu2eTnWeoSpTScRXGVsVSxGQwSEijrgurCsChnbAOtMtrhVERSA1XmVmehK8peiAtzo_ZAktndF3IxHbOlUJwEuHKCSrKDzuhrqI-PQ0aYukHb_oosk7jFcs2X-PXB2gY-vDLv-8"
+                />
+              </div>
+              <h4 class="font-headline text-2xl mb-1">Eléonore Cassel</h4>
+              <p
+                class="font-label uppercase tracking-widest text-xs text-primary/60 mb-6"
+              >
+                Directrice de Création
+              </p>
+              <p
+                class="text-on-secondary-container text-sm leading-relaxed italic"
+              >
+                "Le design est le langage silencieux de la compétence
+                technique."
+              </p>
+            </div>
+            <!-- Leader 3 -->
+            <div class="group">
+              <div class="aspect-[3/4] bg-surface-variant overflow-hidden mb-8">
+                <img
+                  class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  data-alt="Portrait of a young male executive in a modern black turtleneck, looking thoughtfully away from the camera, cinematic lighting"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgtkPske4cKdthcGAR7upz7bS6regaUNrEt4LzF5gDeijvZZRCII5XoTFGfDF2ebDTKpHix1jM-XNYV3K0cfjihK2kLewITD52fw-MhfYQPfA2c6wOORddCcl_zeN4tiz-pQSfqy3NUi6ndN9_qRn7Udu7qJCv5dhEYE8uZnluZNT7IML_Db2SaAcWmhtPVoMKobSXHT0_ctj3-IaxmmgRYShy9Pr5On-xOrhMOV4wJliXAqJ8nfJxEcyo5ky-DDTr296vbw24cQc"
+                />
+              </div>
+              <h4 class="font-headline text-2xl mb-1">Julien Morel</h4>
+              <p
+                class="font-label uppercase tracking-widest text-xs text-primary/60 mb-6"
+              >
+                Directeur Technologique
+              </p>
+              <p
+                class="text-on-secondary-container text-sm leading-relaxed italic"
+              >
+                "La technologie doit s'effacer pour laisser place à l'expérience
+                humaine."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter / CTA -->
+      <section class="py-24 px-8 bg-surface">
+        <div
+          class="max-w-3xl mx-auto text-center border-t border-outline-variant pt-24"
+        >
+          <h3 class="font-headline text-3xl mb-8">
+            Rejoignez le cercle de réflexion.
+          </h3>
+          <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <input
+              class="border-b border-outline-variant bg-transparent px-4 py-3 focus:outline-none focus:border-primary transition-colors font-body w-full md:w-80"
+              placeholder="Votre adresse email"
+              type="email"
+            />
+            <button
+              class="bg-primary text-on-primary px-8 py-3 text-sm uppercase tracking-widest hover:opacity-90 transition-opacity"
+            >
+              S'abonner
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container-low text-primary border-t-0">
+      <div
+        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-20"
+      >
+        <div class="col-span-1 md:col-span-1">
+          <div class="text-lg font-bold font-headline mb-6">
+            Super AgenceCom
+          </div>
+          <p
+            class="font-body text-xs text-on-secondary-container leading-relaxed"
+          >
+            L'excellence éditoriale au service de la stratégie de marque.
+          </p>
+        </div>
+        <div>
+          <h5
+            class="font-label text-sm uppercase tracking-widest mb-6 font-bold"
+          >
+            Réseau
+          </h5>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
+                href="#"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
+                href="#"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="font-label text-sm uppercase tracking-widest mb-6 font-bold"
+          >
+            Contact
+          </h5>
+          <ul class="space-y-4">
+            <li>
+              <a
+                class="text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
+                href="#"
+                >Bureau de Paris</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
+                href="#"
+                >Newsletter</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5
+            class="font-label text-sm uppercase tracking-widest mb-6 font-bold"
+          >
+            Légal
+          </h5>
+          <p class="text-on-secondary-container text-xs leading-loose">
+            Confidentialité<br />
+            Mentions légales
+          </p>
+        </div>
+      </div>
+      <div class="max-w-7xl mx-auto px-8 pb-12">
+        <div
+          class="border-t border-outline-variant/30 pt-8 flex justify-between items-center text-[10px] font-label uppercase tracking-widest text-on-secondary-container/60"
+        >
+          <span>© 2026 Super AgenceCom. Tous droits réservés.</span>
+          <span class="flex items-center gap-2"
+            >Développé par<span class="text-primary font-bold"
+              >Wibegin</span
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
