@@ -1,447 +1,214 @@
 <!doctype html>
-
-<html class="light" lang="fr">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super AgenceCom | Études de cas</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-surface-variant": "#44474d",
-              "on-secondary": "#ffffff",
-              "secondary-fixed": "#d9e3f7",
-              "tertiary-container": "#3a2800",
-              "primary-container": "#1a2b47",
-              "inverse-primary": "#b6c7ea",
-              "tertiary-fixed": "#ffdea5",
-              "outline-variant": "#c5c6ce",
-              "surface-variant": "#e0e3e5",
-              "on-primary": "#ffffff",
-              "on-tertiary": "#ffffff",
-              "on-primary-fixed-variant": "#374765",
-              primary: "#031631",
-              background: "#f7f9fb",
-              outline: "#75777e",
-              "on-primary-container": "#8293b4",
-              "on-tertiary-fixed-variant": "#5d4201",
-              "surface-container-highest": "#e0e3e5",
-              "surface-tint": "#4e5f7d",
-              secondary: "#555f70",
-              "on-secondary-fixed-variant": "#3d4757",
-              "on-secondary-container": "#596374",
-              "on-tertiary-container": "#b08d48",
-              surface: "#f7f9fb",
-              "on-surface": "#191c1e",
-              "on-secondary-fixed": "#121c2a",
-              "on-tertiary-fixed": "#261900",
-              "surface-container-high": "#e6e8ea",
-              "surface-container-low": "#f2f4f6",
-              "inverse-surface": "#2d3133",
-              "on-primary-fixed": "#081b37",
-              "tertiary-fixed-dim": "#e9c176",
-              "on-error": "#ffffff",
-              "on-background": "#191c1e",
-              "primary-fixed": "#d6e3ff",
-              "on-error-container": "#93000a",
-              "error-container": "#ffdad6",
-              "surface-dim": "#d8dadc",
-              error: "#ba1a1a",
-              "inverse-on-surface": "#eff1f3",
-              "secondary-fixed-dim": "#bdc7db",
-              "primary-fixed-dim": "#b6c7ea",
-              "surface-container": "#eceef0",
-              "surface-bright": "#f7f9fb",
-              "surface-container-lowest": "#ffffff",
-              "secondary-container": "#d6e0f4",
-              tertiary: "#201500",
-            },
-            fontFamily: {
-              headline: ["Noto Serif"],
-              body: ["Manrope"],
-              label: ["Manrope"],
-            },
-            borderRadius: {
-              DEFAULT: "0.125rem",
-              lg: "0.25rem",
-              xl: "0.5rem",
-              full: "0.75rem",
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 400,
-          "GRAD" 0,
-          "opsz" 24;
-      }
-      .project-card:hover img {
-        transform: scale(1.05);
-      }
-      .tonal-shift-bg {
-        background: linear-gradient(135deg, #031631 0%, #1a2b47 100%);
-      }
-    </style>
+    <link rel="stylesheet" href="css/etudes.css" />
+    <!-- <style>
+      
+    </style> -->
   </head>
-  <body class="bg-surface font-body text-on-surface">
-    <nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl shadow-sm">
-      <div
-        class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
-      >
-        <div class="text-xl font-bold font-headline text-primary">
-          Super Agence Com
-        </div>
-        <div
-          class="hidden md:flex items-center space-x-10 font-headline font-medium tracking-tight"
-        >
-          <a
-            class="text-on-secondary-container hover:text-primary transition-colors"
-            href="index.html"
-            >Accueil</a
-          >
-          <a
-            class="text-on-secondary-container hover:text-primary transition-colors"
-            href="services.html"
-            >Services</a
-          >
-          <a
-            class="text-primary border-b-2 border-primary pb-1"
-            href="etudes.html"
-            >Études de cas</a
-          >
-          <a
-            class="text-on-secondary-container hover:text-primary transition-colors"
-            href="apropos.html"
-            >À propos</a
-          >
-        </div>
-        <button
-          class="bg-primary text-on-primary px-6 py-2.5 rounded-sm font-label text-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300 scale-95 active:scale-90 transition-transform duration-200"
-        >
-          <a href="contact.html">Contactez-nous</a>
-        </button>
-      </div>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="index.html" class="nav-logo">Super AgenceCom</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="etudes.html" class="active">Études de cas</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta">Contactez-nous</a>
+      <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
-    <main class="pt-32 pb-24">
-      <header class="max-w-7xl mx-auto px-8 mb-20">
-        <div class="max-w-3xl">
-          <span
-            class="font-label text-xs uppercase tracking-[0.3em] text-on-secondary-container mb-4 block"
-            >Archives Sélectives</span
-          >
-          <h1
-            class="font-headline text-5xl md:text-6xl text-primary leading-tight mb-8"
-          >
-            L'intelligence appliquée aux
-            <span class="text-tertiary-fixed-dim">projets d'exception</span>.
-          </h1>
-          <p class="text-lg text-on-secondary-container leading-relaxed">
-            Une sélection rigoureuse d'interventions stratégiques où l'exigence
-            éditoriale rencontre l'ambition architecturale.
-          </p>
-        </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="etudes.html">Études de cas</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contactez-nous</a>
+    </div>
+
+    <main>
+      <!-- PAGE HEADER -->
+      <header class="page-header">
+        <p class="page-kicker">Archives sélectives</p>
+        <h1>L'intelligence appliquée aux projets d'exception.</h1>
+        <p>
+          Une sélection rigoureuse d'interventions stratégiques où l'exigence
+          éditoriale rencontre l'ambition architecturale.
+        </p>
       </header>
-      <section class="max-w-7xl mx-auto px-8 mb-16">
-        <div class="flex flex-wrap gap-4">
-          <button
-            class="px-8 py-2 rounded-full bg-primary text-on-primary text-sm font-medium tracking-wide"
-          >
-            Tous les projets
-          </button>
-          <button
-            class="px-8 py-2 rounded-full bg-secondary-container text-on-secondary-container text-sm font-medium tracking-wide hover:bg-surface-container-high transition-colors"
-          >
-            Conseil
-          </button>
-          <button
-            class="px-8 py-2 rounded-full bg-secondary-container text-on-secondary-container text-sm font-medium tracking-wide hover:bg-surface-container-high transition-colors"
-          >
-            Communication
-          </button>
-          <button
-            class="px-8 py-2 rounded-full bg-secondary-container text-on-secondary-container text-sm font-medium tracking-wide hover:bg-surface-container-high transition-colors"
-          >
-            Branding
-          </button>
-        </div>
-      </section>
-      <section class="max-w-7xl mx-auto px-8">
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
-          <article class="md:col-span-8 group project-card cursor-pointer">
-            <div class="overflow-hidden bg-surface-container-low mb-6">
+
+      <!-- FILTERS -->
+      <div class="filters">
+        <button class="filter-btn active">Tous les projets</button>
+        <button class="filter-btn">Conseil</button>
+        <button class="filter-btn">Communication</button>
+        <button class="filter-btn">Branding</button>
+      </div>
+
+      <!-- PROJECTS -->
+      <section class="projects">
+        <!-- Row 1 : featured + side -->
+        <div class="row-featured">
+          <article class="project-card">
+            <div class="project-img">
               <img
-                alt="Immobilier de prestige"
-                class="w-full aspect-[16/9] object-cover transition-transform duration-500 ease-in-out"
-                data-alt="monochrome architectural photography of a minimalist glass skyscraper reflecting a clear sky with sharp geometric shadows and high contrast"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDoVsRSEzjtWLmzAONzVfKJd7yivVgjVMF9qtGL1KUD2JSLdt88KMrLeJ-u3PWtS8fF-uFd8jRx0TJ93kYltWf2korIjQOG6TYQ_uG2hBtKDsYShHqp_TlUJuVMr09kNxvXs-bEwbRDJKBT_tDMiWG_n-N-C-b12I80NGNvT_QLFDI92JzpFyPjTETchfqirDY5pLGhb78eDPlLWmmlBBG4x2lDurVFmp3t58v6Ou710jMTazxqQq569E-VR2e9nnI5oZiT22uPWk"
+                alt="Résidences Élysée"
+                style="aspect-ratio: 16/9"
               />
             </div>
-            <div
-              class="flex justify-between items-end border-b border-outline-variant/30 pb-6"
-            >
-              <div>
-                <span
-                  class="font-label text-[10px] uppercase tracking-widest text-on-secondary-container"
-                  >Conseil Stratégique • 2023</span
-                >
-                <h2
-                  class="font-headline text-3xl text-primary mt-2 group-hover:text-tertiary-fixed-dim transition-colors"
-                >
-                  Le Nouveau Standard : Résidences Élysée
-                </h2>
-              </div>
-              <span class="material-symbols-outlined text-primary text-3xl mb-1"
-                >arrow_outward</span
-              >
+            <p class="project-meta">Conseil Stratégique · 2023</p>
+            <div class="project-title">
+              <span>Le Nouveau Standard : Résidences Élysée</span>
+              <span class="project-arrow">↗</span>
             </div>
           </article>
-          <article
-            class="md:col-span-4 group project-card cursor-pointer mt-12 md:mt-24"
-          >
-            <div class="overflow-hidden bg-surface-container-low mb-6">
+          <article class="project-card card-side">
+            <div class="project-img">
               <img
-                alt="Branding Luxe"
-                class="w-full aspect-[4/5] object-cover transition-transform duration-500 ease-in-out"
-                data-alt="macro shot of high-quality embossed white paper with gold foil typography in a minimalist luxury editorial style with soft shadows"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtSO_ZkN7-k9SCTRR8P82F_PMDkH3ExQmw2NmU-CN72J_nMb7AT-62NX77GojMbiHPPKbg_d0kI_eqsM3r6M2RoiU4Ppxfj6aTvuDeRiIJ5rlFeVNMxs0l3orl6Me8q3d3yQipvy_azu1eqUZrHhtHRTdiQ7gmHdiNINUe7VPA_mW2TZ1iM2qLhPk_tJLnfKzhkoRkbPBmOvtuGiN-dMr3Dg6WmWfeLbeZLdmJ3kRsBq5ncVdL73bkvbyNd2IhNtkTg2mgLgpfx3M"
+                alt="Maison Valois"
+                style="aspect-ratio: 4/5"
               />
             </div>
-            <div class="border-b border-outline-variant/30 pb-6">
-              <span
-                class="font-label text-[10px] uppercase tracking-widest text-on-secondary-container"
-                >Branding & Identité</span
-              >
-              <h2
-                class="font-headline text-2xl text-primary mt-2 group-hover:text-tertiary-fixed-dim transition-colors"
-              >
-                Maison Valois : L'Héritage Redéfini
-              </h2>
-            </div>
-          </article>
-          <article
-            class="md:col-span-12 group project-card cursor-pointer mt-12"
-          >
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div class="overflow-hidden bg-surface-container-low">
-                <img
-                  alt="Espace de travail"
-                  class="w-full aspect-[16/10] object-cover transition-transform duration-500 ease-in-out"
-                  data-alt="wide shot of a vast empty modern office space with dark oak walls and soft ambient light coming through large windows"
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4ei_XLBW2vPC_3x1C0oCLwjFwpnkibk0mJc0duQXP__cjh2RK09Q6y02GQn7Fj87DHVJ51IqM-IobFkIYKshXVp3mAYrs1d5T4_lvr-dqrLXTw-XoMp2CljddKl8NHsgX9kQdgpLpP9Han5tIYvckU8DncdcpE75drLqEDdnGr0k7i_-XujCHNllFTt2t189faJ6pfwGHl0kJFy9netuRSFzkTIqZ8P68GbpoavrKEb5GK8TabhLpSx_HK0KArnsAMpCjPNuKdnA"
-                />
-              </div>
-              <div>
-                <span
-                  class="font-label text-[10px] uppercase tracking-widest text-on-secondary-container"
-                  >Communication Interne</span
-                >
-                <h2
-                  class="font-headline text-4xl text-primary mt-4 mb-6 leading-tight"
-                >
-                  Transformation Culturelle : Tech-Frontier Headquarters
-                </h2>
-                <p class="text-on-secondary-container leading-relaxed mb-8">
-                  Redéfinir le dialogue au sein d'une organisation mondiale à
-                  travers un écosystème éditorial sur-mesure.
-                </p>
-                <button
-                  class="font-label text-sm uppercase tracking-widest text-primary border-b border-primary pb-1 hover:text-tertiary-fixed-dim hover:border-tertiary-fixed-dim transition-colors"
-                >
-                  Découvrir le cas
-                </button>
-              </div>
-            </div>
-          </article>
-          <article
-            class="md:col-span-6 group project-card cursor-pointer mt-12"
-          >
-            <div class="overflow-hidden bg-surface-container-low mb-6">
-              <img
-                alt="Hôtellerie"
-                class="w-full aspect-square object-cover transition-transform duration-500 ease-in-out"
-                data-alt="moody high-end hotel lobby with velvet furniture and warm dim lighting creating a sophisticated architectural atmosphere"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4POGhbk9mKAqsJPg_ooHcGity65pDo5aAvg4sXwg9GrDS8C2XTHuO-CVkOoE1hcIBzYIKzrTvqmcEpoD35Roao2uydBQp_VvoCB0b6nH_E9-pAEJJJqU4uzVe6P_18jGt4Q2NflYjHx0Wa2KPL9wF1aQJqdiaTCAFrIC4_DGQ4dNfO62whVxxvcDWp-QywTNW30164_l594OMV-1UwHhrvCILRA8LKwzxbFBYBG4VcG_R5WR9weqfNUZBbR1gv2E74_dD-IQZXk"
-              />
-            </div>
-            <div class="border-b border-outline-variant/30 pb-6">
-              <span
-                class="font-label text-[10px] uppercase tracking-widest text-on-secondary-container"
-                >Conseil Immobilière</span
-              >
-              <h2
-                class="font-headline text-2xl text-primary mt-2 group-hover:text-tertiary-fixed-dim transition-colors"
-              >
-                The Grand Atrium : Repositionnement
-              </h2>
-            </div>
-          </article>
-          <article
-            class="md:col-span-6 group project-card cursor-pointer mt-12 md:mt-0"
-          >
-            <div class="overflow-hidden bg-surface-container-low mb-6">
-              <img
-                alt="Consulting"
-                class="w-full aspect-square object-cover transition-transform duration-500 ease-in-out"
-                data-alt="top view of a professional meeting table with minimalist stationary and a dark wooden surface in high-end office lighting"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIVbLW_Qkhv79Lv6dVGySmkC1GRNboRFOy6DdYGrJOYnpZqBXp5cvIhwalEq68bufzzJigYSBeiIEs7_TVakhgdbzGmgyWJ62_y0hNSDbZInrZng1MKSQNM4i0qBHtZMjjJY0vT3j_jL8cJe6UytF-8LXUh2hY-R0X6jbbzeOdsLFWAncxOzPJ-KY9h3lsGIeBO_sA6gQm_Jm-PM5t2ihyvK-Nx3GzK1q0rB9Lbb4EphbzOC-J6FInsRyUoHjkwZk935QCK9JCw_M"
-              />
-            </div>
-            <div class="border-b border-outline-variant/30 pb-6">
-              <span
-                class="font-label text-[10px] uppercase tracking-widest text-on-secondary-container"
-                >Communication de Crise</span
-              >
-              <h2
-                class="font-headline text-2xl text-primary mt-2 group-hover:text-tertiary-fixed-dim transition-colors"
-              >
-                Protocole Alpha : Sécurisation Narrative
-              </h2>
+            <p class="project-meta">Branding &amp; Identité</p>
+            <div class="project-title">
+              <span>Maison Valois : L'Héritage Redéfini</span>
             </div>
           </article>
         </div>
-      </section>
-      <section class="mt-32 max-w-7xl mx-auto px-8">
-        <div class="tonal-shift-bg p-16 md:p-24 relative overflow-hidden">
-          <div class="relative z-10 max-w-2xl">
-            <h2 class="font-headline text-4xl text-white mb-8">
-              Votre prochain projet mérite une autorité éditoriale.
-            </h2>
-            <p class="text-on-primary-container text-lg mb-12">
-              Collaborons pour transformer votre vision stratégique en une
-              réalité tangible et influente.
+
+        <!-- Row 2 : split full width -->
+        <div class="row-split">
+          <div class="project-img">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4ei_XLBW2vPC_3x1C0oCLwjFwpnkibk0mJc0duQXP__cjh2RK09Q6y02GQn7Fj87DHVJ51IqM-IobFkIYKshXVp3mAYrs1d5T4_lvr-dqrLXTw-XoMp2CljddKl8NHsgX9kQdgpLpP9Han5tIYvckU8DncdcpE75drLqEDdnGr0k7i_-XujCHNllFTt2t189faJ6pfwGHl0kJFy9netuRSFzkTIqZ8P68GbpoavrKEb5GK8TabhLpSx_HK0KArnsAMpCjPNuKdnA"
+              alt="Tech-Frontier"
+            />
+          </div>
+          <div class="split-content">
+            <p class="project-meta">Communication Interne</p>
+            <h2>Transformation Culturelle : Tech-Frontier Headquarters</h2>
+            <p>
+              Redéfinir le dialogue au sein d'une organisation mondiale à
+              travers un écosystème éditorial sur-mesure.
             </p>
-            <button
-              class="bg-tertiary-fixed-dim text-primary px-10 py-4 font-label text-sm uppercase tracking-[0.2em] hover:brightness-110 transition-all"
-            >
-              Initier une conversation
-            </button>
-          </div>
-          <div class="absolute right-[-10%] bottom-[-20%] opacity-10">
-            <span class="font-headline text-[25rem] text-white select-none"
-              >A</span
-            >
+            <a href="#" class="btn-link">Découvrir le cas →</a>
           </div>
         </div>
+
+        <!-- Row 3 : duo -->
+        <div class="row-duo">
+          <article class="project-card">
+            <div class="project-img">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCW4POGhbk9mKAqsJPg_ooHcGity65pDo5aAvg4sXwg9GrDS8C2XTHuO-CVkOoE1hcIBzYIKzrTvqmcEpoD35Roao2uydBQp_VvoCB0b6nH_E9-pAEJJJqU4uzVe6P_18jGt4Q2NflYjHx0Wa2KPL9wF1aQJqdiaTCAFrIC4_DGQ4dNfO62whVxxvcDWp-QywTNW30164_l594OMV-1UwHhrvCILRA8LKwzxbFBYBG4VcG_R5WR9weqfNUZBbR1gv2E74_dD-IQZXk"
+                alt="The Grand Atrium"
+                style="aspect-ratio: 1/1"
+              />
+            </div>
+            <p class="project-meta">Conseil Immobilière</p>
+            <div class="project-title">
+              <span>The Grand Atrium : Repositionnement</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-img">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIVbLW_Qkhv79Lv6dVGySmkC1GRNboRFOy6DdYGrJOYnpZqBXp5cvIhwalEq68bufzzJigYSBeiIEs7_TVakhgdbzGmgyWJ62_y0hNSDbZInrZng1MKSQNM4i0qBHtZMjjJY0vT3j_jL8cJe6UytF-8LXUh2hY-R0X6jbbzeOdsLFWAncxOzPJ-KY9h3lsGIeBO_sA6gQm_Jm-PM5t2ihyvK-Nx3GzK1q0rB9Lbb4EphbzOC-J6FInsRyUoHjkwZk935QCK9JCw_M"
+                alt="Protocole Alpha"
+                style="aspect-ratio: 1/1"
+              />
+            </div>
+            <p class="project-meta">Communication de Crise</p>
+            <div class="project-title">
+              <span>Protocole Alpha : Sécurisation Narrative</span>
+            </div>
+          </article>
+        </div>
       </section>
-    </main>
-    <footer class="bg-surface-container-low text-primary">
-      <div
-        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-20"
-      >
-        <div class="md:col-span-1">
-          <div class="text-lg font-bold font-headline mb-6">
-            Super Agence Com
-          </div>
-          <p
-            class="font-body text-sm text-on-secondary-container leading-relaxed"
-          >
-            Cabinet de conseil en stratégie éditoriale et branding de prestige
-            pour les leaders d'opinion.
+
+      <!-- CTA BAND -->
+      <div class="cta-band">
+        <div>
+          <h2>Votre prochain projet mérite une autorité éditoriale.</h2>
+          <p>
+            Collaborons pour transformer votre vision stratégique en une réalité
+            tangible et influente.
           </p>
         </div>
-        <div class="flex flex-col space-y-4">
-          <span
-            class="font-label text-sm uppercase tracking-widest text-primary font-bold"
-            >Explorer</span
-          >
-          <a
-            class="font-body text-sm text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
-            href="index.html"
-            >Accueil</a
-          >
-          <a
-            class="font-body text-sm text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
-            href="services.html"
-            >Services</a
-          >
-          <a class="font-body text-sm text-primary font-bold" href="etudes.html"
-            >Études de cas</a
-          >
-          <a
-            class="font-body text-sm text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
-            href="apropos.html"
-            >À propos</a
-          >
+        <a href="contact.html" class="btn-white">Initier une conversation</a>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Super AgenceCom</div>
+          <p class="footer-desc">
+            L'excellence stratégique et éditoriale pour les marques qui exigent
+            plus de leur présence.
+          </p>
         </div>
-        <div class="flex flex-col space-y-4">
-          <span
-            class="font-label text-sm uppercase tracking-widest text-primary font-bold"
-            >Réseau</span
-          >
-          <a
-            class="font-body text-sm text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
-            href="#"
-            >LinkedIn</a
-          >
-          <a
-            class="font-body text-sm text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
-            href="#"
-            >Instagram</a
-          >
-          <a
-            class="font-body text-sm text-on-secondary-container hover:underline decoration-tertiary-fixed-dim underline-offset-4 transition-all"
-            href="#"
-            >Newsletter</a
-          >
+        <div class="footer-col">
+          <h4>Explorer</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="etudes.html">Études de cas</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+          </ul>
         </div>
-        <div class="flex flex-col space-y-4">
-          <span
-            class="font-label text-sm uppercase tracking-widest text-primary font-bold"
-            >Contact</span
-          >
-          <span class="font-body text-sm text-on-secondary-container"
-            >Bureau de Paris</span
-          >
-          <span class="font-body text-sm text-on-secondary-container"
-            >32 Avenue Montaigne, 75008</span
-          >
-          <a
-            class="font-body text-sm text-primary border-b border-outline-variant w-fit mt-4"
-            href="mailto:contact@superagencecom.com"
-            >contact@superagencecom.com</a
-          >
+        <div class="footer-col">
+          <h4>Réseau</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address class="footer-address">
+            Bureau de Paris<br />
+            32 Avenue Montaigne<br />
+            75008 Paris
+          </address>
+          <p class="footer-email">contact@superagencecom.com</p>
         </div>
       </div>
-      <div
-        class="max-w-7xl mx-auto px-8 py-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4"
-      >
-        <p
-          class="font-label text-xs uppercase tracking-widest text-on-secondary-container"
-        >
-          © 2024 Super Agence Com. Tous droits réservés.
-        </p>
-        <div class="flex gap-8">
-          <a
-            class="font-label text-xs uppercase tracking-widest text-on-secondary-container"
-            href="#"
-            >Mentions Légales</a
-          >
-          <a
-            class="font-label text-xs uppercase tracking-widest text-on-secondary-container"
-            href="#"
-            >Confidentialité</a
-          >
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Super AgenceCom. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMobile").classList.toggle("open");
+      }
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+        });
+      });
+    </script>
   </body>
 </html>

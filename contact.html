@@ -1,403 +1,308 @@
 <!doctype html>
-
-<html class="light" lang="fr">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super AgenceCom | Contact</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;700&family=Manrope:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "on-surface-variant": "#44474d",
-              "on-secondary": "#ffffff",
-              "secondary-fixed": "#d9e3f7",
-              "tertiary-container": "#3a2800",
-              "primary-container": "#1a2b47",
-              "inverse-primary": "#b6c7ea",
-              "tertiary-fixed": "#ffdea5",
-              "outline-variant": "#c5c6ce",
-              "surface-variant": "#e0e3e5",
-              "on-primary": "#ffffff",
-              "on-tertiary": "#ffffff",
-              "on-primary-fixed-variant": "#374765",
-              primary: "#031631",
-              background: "#f7f9fb",
-              outline: "#75777e",
-              "on-primary-container": "#8293b4",
-              "on-tertiary-fixed-variant": "#5d4201",
-              "surface-container-highest": "#e0e3e5",
-              "surface-tint": "#4e5f7d",
-              secondary: "#555f70",
-              "on-secondary-fixed-variant": "#3d4757",
-              "on-secondary-container": "#596374",
-              "on-tertiary-container": "#b08d48",
-              surface: "#f7f9fb",
-              "on-surface": "#191c1e",
-              "on-secondary-fixed": "#121c2a",
-              "on-tertiary-fixed": "#261900",
-              "surface-container-high": "#e6e8ea",
-              "surface-container-low": "#f2f4f6",
-              "inverse-surface": "#2d3133",
-              "on-primary-fixed": "#081b37",
-              "tertiary-fixed-dim": "#e9c176",
-              "on-error": "#ffffff",
-              "on-background": "#191c1e",
-              "primary-fixed": "#d6e3ff",
-              "on-error-container": "#93000a",
-              "error-container": "#ffdad6",
-              "surface-dim": "#d8dadc",
-              error: "#ba1a1a",
-              "inverse-on-surface": "#eff1f3",
-              "secondary-fixed-dim": "#bdc7db",
-              "primary-fixed-dim": "#b6c7ea",
-              "surface-container": "#eceef0",
-              "surface-bright": "#f7f9fb",
-              "surface-container-lowest": "#ffffff",
-              "secondary-container": "#d6e0f4",
-              tertiary: "#201500",
-            },
-            fontFamily: {
-              headline: ["Noto Serif"],
-              body: ["Manrope"],
-              label: ["Manrope"],
-            },
-            borderRadius: {
-              DEFAULT: "0.125rem",
-              lg: "0.25rem",
-              xl: "0.5rem",
-              full: "0.75rem",
-            },
-          },
-        },
-      };
-    </script>
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings:
-          "FILL" 0,
-          "wght" 400,
-          "GRAD" 0,
-          "opsz" 24;
-      }
-      .editorial-gradient {
-        background: linear-gradient(135deg, #031631 0%, #1a2b47 100%);
-      }
-    </style>
+
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- <style>
+      
+    </style> -->
   </head>
-  <body
-    class="bg-background text-on-surface font-body selection:bg-tertiary-fixed-dim selection:text-primary"
-  >
-    <header
-      class="fixed top-0 w-full z-50 bg-white/70 dark:bg-[#031631]/70 backdrop-blur-xl shadow-sm dark:shadow-none"
-    >
-      <nav
-        class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
-      >
-        <div
-          class="text-xl font-bold font-['Noto_Serif'] text-[#031631] dark:text-white"
-        >
-          Super Agence Com
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a href="index.html" class="nav-logo">Super AgenceCom</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="etudes.html">Études de cas</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+      </ul>
+      <a href="contact.html" class="nav-cta active">Contactez-nous</a>
+      <button class="nav-burger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- NAV MOBILE -->
+    <div class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="etudes.html">Études de cas</a>
+      <a href="apropos.html">À propos</a>
+      <a href="contact.html">Contactez-nous</a>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div>
+          <p class="hero-label">Conversations stratégiques · 2026</p>
+          <h1>Façonnons ensemble votre <em>autorité</em>.</h1>
+          <p class="hero-sub">
+            Chaque projet commence par une écoute attentive. Que vous ayez une
+            vision précise ou un concept en gestation, notre bureau est prêt à
+            structurer votre message.
+          </p>
         </div>
-        <div class="hidden md:flex space-x-12 items-center">
-          <a
-            class="font-['Noto_Serif'] font-medium tracking-tight text-[#596374] dark:text-[#c5c6ce] hover:text-[#031631] dark:hover:text-white transition-colors"
-            href="index.html"
-            >Accueil</a
-          >
-          <a
-            class="font-['Noto_Serif'] font-medium tracking-tight text-[#596374] dark:text-[#c5c6ce] hover:text-[#031631] dark:hover:text-white transition-colors"
-            href="services.html"
-            >Services</a
-          >
-          <a
-            class="font-['Noto_Serif'] font-medium tracking-tight text-[#596374] dark:text-[#c5c6ce] hover:text-[#031631] dark:hover:text-white transition-colors"
-            href="etudes.html"
-            >Études de cas</a
-          >
-          <a
-            class="font-['Noto_Serif'] font-medium tracking-tight text-[#596374] dark:text-[#c5c6ce] hover:text-[#031631] dark:hover:text-white transition-colors"
-            href="apropos.html"
-            >À propos</a
-          >
-          <a
-            class="font-['Noto_Serif'] font-medium tracking-tight text-[#031631] dark:text-[#e9c176] border-b-2 border-[#031631] dark:border-[#e9c176] pb-1"
-            href="contact.html"
-            >Contactez-nous</a
-          >
-        </div>
-        <button class="md:hidden">
-          <span class="material-symbols-outlined text-primary">menu</span>
-        </button>
-      </nav>
-    </header>
-    <main class="pt-32">
-      <section class="max-w-7xl mx-auto px-8 mb-24">
-        <div class="flex flex-col md:flex-row gap-16 items-start">
-          <div class="md:w-1/2">
-            <span
-              class="text-tertiary-fixed-dim font-bold tracking-[0.2em] uppercase text-xs mb-4 block"
-              >Conversations Stratégiques</span
-            >
-            <h1
-              class="font-headline text-5xl md:text-6xl text-primary leading-tight mb-8"
-            >
-              Façonnons ensemble votre
-              <span class="text-on-tertiary-container italic">autorité</span>.
-            </h1>
-            <p class="text-on-surface-variant text-lg max-w-md leading-relaxed">
-              Chaque projet commence par une écoute attentive. Que vous ayez une
-              vision précise ou un concept en gestation, notre bureau est prêt à
-              structurer votre message.
-            </p>
-          </div>
-          <div
-            class="md:w-1/2 w-full aspect-[4/3] bg-surface-container overflow-hidden rounded-lg"
-          >
+        <div class="hero-visual">
+          <div class="hero-img-block">
             <img
-              alt="Interior of a minimalist Parisian office"
-              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              data-alt="Interior of a high-end minimalist office in Paris with large windows, mid-century furniture, and soft morning sunlight"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmWNsHWpQkCs42_BaHXYCOmIugF_hNiXZS7L0NsRoNBBW7YHpxyXKMgBntMfNik9R80WEeC_UaI9TzIu5gkZ1y8_an3pzXUiwEDHODLTICo9pulTwzHWzQYqK6NVW4zl07O3Qav0ZJRAVL6iRvs-kKy-nPJO6M3YWn9QA56EZVNmQHXk-kJFF867HaXSftqWPQ4pfknoeC-bQAd7Adzvq1OYQVDn88bg75KE_O8GgWdmmsgy-PToPlT1R4Eg8927fpHx_iUXvAEtM"
+              alt="Bureau parisien minimaliste"
             />
           </div>
         </div>
       </section>
-      <section class="bg-surface-container-low py-32">
-        <div class="max-w-7xl mx-auto px-8">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-20">
-            <div class="lg:col-span-4 space-y-16">
-              <div>
-                <h3 class="font-headline text-2xl text-primary mb-6">
-                  Bureau de Paris
-                </h3>
-                <p class="text-on-surface-variant leading-loose font-light">
-                  42 Rue de la Paix<br />
-                  75002 Paris, France
-                </p>
-              </div>
-              <div>
-                <h3 class="font-headline text-2xl text-primary mb-6">
-                  Coordonnées
-                </h3>
-                <div class="space-y-4">
-                  <a
-                    class="block text-primary hover:text-tertiary-fixed-dim transition-colors border-b border-outline-variant/40 pb-2 w-fit"
-                    href="mailto:contact@superagencecom.com"
-                  >
-                    contact@superagencecom.com
-                  </a>
-                  <a
-                    class="block text-primary hover:text-tertiary-fixed-dim transition-colors border-b border-outline-variant/40 pb-2 w-fit"
-                    href="tel:+33123456789"
-                  >
-                    +33 (0) 1 23 45 67 89
-                  </a>
-                </div>
-              </div>
-              <div>
-                <h3 class="font-headline text-2xl text-primary mb-6">
-                  Suivez-nous
-                </h3>
-                <div class="flex gap-6">
-                  <a
-                    class="text-primary hover:text-tertiary-fixed-dim transition-colors uppercase text-xs font-bold tracking-widest"
-                    href="#"
-                    >LinkedIn</a
-                  >
-                  <a
-                    class="text-primary hover:text-tertiary-fixed-dim transition-colors uppercase text-xs font-bold tracking-widest"
-                    href="#"
-                    >Instagram</a
-                  >
-                </div>
+
+      <!-- CONTACT FORM + INFO -->
+      <section class="contact-section">
+        <div class="contact-inner">
+          <!-- INFO -->
+          <div class="contact-info">
+            <div class="info-block">
+              <h3>Bureau de Paris</h3>
+              <address>
+                42 Avenue des Arts<br />
+                75008 Paris, France
+              </address>
+            </div>
+            <div class="info-block">
+              <h3>Coordonnées</h3>
+              <a href="mailto:hello@superagencecom.com"
+                >hello@superagencecom.com</a
+              >
+              <a href="tel:+33123456789">+33 (0)1 23 45 67 89</a>
+            </div>
+            <div class="info-block">
+              <h3>Horaires</h3>
+              <p>Lundi – Vendredi<br />9h00 – 18h30</p>
+            </div>
+            <div class="info-block">
+              <h3>Suivez-nous</h3>
+              <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
               </div>
             </div>
-            <div
-              class="lg:col-span-8 bg-surface-container-lowest p-8 md:p-16 rounded-sm shadow-sm"
-            >
-              <form action="#" class="space-y-12">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                  <div class="relative group">
-                    <label
-                      class="block text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2"
-                      for="name"
-                      >Nom Complet</label
-                    >
-                    <input
-                      class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary placeholder:text-outline-variant/60 py-2 transition-all font-light"
-                      id="name"
-                      name="name"
-                      placeholder="Jean Dupont"
-                      type="text"
-                    />
-                  </div>
-                  <div class="relative group">
-                    <label
-                      class="block text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2"
-                      for="email"
-                      >Adresse Email</label
-                    >
-                    <input
-                      class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary placeholder:text-outline-variant/60 py-2 transition-all font-light"
-                      id="email"
-                      name="email"
-                      placeholder="jean@societe.com"
-                      type="email"
-                    />
-                  </div>
-                </div>
-                <div class="relative group">
-                  <label
-                    class="block text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2"
-                    for="subject"
-                    >Sujet de Consultation</label
-                  >
+          </div>
+
+          <!-- FORM -->
+          <div class="form-card">
+            <form action="#" method="post" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Nom complet</label>
                   <input
-                    class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary placeholder:text-outline-variant/60 py-2 transition-all font-light"
-                    id="subject"
-                    name="subject"
-                    placeholder="Stratégie éditoriale, Identité de marque..."
                     type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Jean Dupont"
+                    autocomplete="name"
                   />
                 </div>
-                <div class="relative group">
-                  <label
-                    class="block text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2"
-                    for="message"
-                    >Votre Message</label
-                  >
+                <div class="field">
+                  <label for="email">Adresse email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="jean@societe.com"
+                    autocomplete="email"
+                  />
+                </div>
+                <div class="field">
+                  <label for="company">Société</label>
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    placeholder="Nom de votre entreprise"
+                  />
+                </div>
+                <div class="field">
+                  <label for="service">Service souhaité</label>
+                  <select id="service" name="service">
+                    <option value="" disabled selected>
+                      Choisir un service
+                    </option>
+                    <option>Identité Architecturale</option>
+                    <option>Stratégie d'Influence</option>
+                    <option>Contenu &amp; Narration</option>
+                    <option>Écosystèmes Digitaux</option>
+                    <option>Autre</option>
+                  </select>
+                </div>
+                <div class="field full">
+                  <label for="subject">Sujet de consultation</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Stratégie éditoriale, identité de marque..."
+                  />
+                </div>
+                <div class="field full">
+                  <label for="message">Votre message</label>
                   <textarea
-                    class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-outline-variant/40 focus:ring-0 focus:border-primary placeholder:text-outline-variant/60 py-2 transition-all font-light resize-none"
                     id="message"
                     name="message"
+                    rows="5"
                     placeholder="Comment pouvons-nous vous accompagner ?"
-                    rows="4"
                   ></textarea>
                 </div>
-                <div class="pt-4">
-                  <button
-                    class="editorial-gradient text-on-primary px-12 py-5 rounded-sm hover:opacity-90 transition-all flex items-center gap-4 group"
-                    type="submit"
+              </div>
+              <div class="form-footer">
+                <p class="form-note">
+                  Votre message sera traité sous 24 h ouvrées. Toutes les
+                  consultations initiales sont offertes.
+                </p>
+                <button type="submit" class="btn-dark">
+                  Envoyer la demande
+                  <svg
+                    viewBox="0 0 16 16"
+                    width="14"
+                    height="14"
+                    fill="currentColor"
                   >
-                    <span class="text-xs uppercase tracking-[0.3em] font-bold"
-                      >Envoyer la demande</span
-                    >
-                    <span
-                      class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
-                      >arrow_forward</span
-                    >
-                  </button>
-                </div>
-              </form>
-            </div>
+                    <path
+                      d="M1 8h14M9 2l6 6-6 6"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
-      <section
-        class="w-full h-[500px] grayscale contrast-125 brightness-90 relative"
-      >
-        <div
-          class="absolute inset-0 bg-primary/10 mix-blend-multiply pointer-events-none"
-        ></div>
+
+      <!-- MAP -->
+      <div class="map-section">
         <img
-          class="w-full h-full object-cover"
-          data-alt="Stylized architectural map view of Paris streets around the Rue de la Paix, high contrast and elegant"
-          data-location="Paris"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyRSuQqxBEd-TTLz85qvFwPUv2OA-hUXI-F_S6Fj0_tESSiRznS1naWSbbjg78_O7LSK4WozMXryUuVk_a7SrsJlyNLB8gv8KGdFPjZifl46ItCO2hH0p2frplc1iXHiKT7IxQtZwxpC7VgoKtk_YLIkVxV_5792aF50ocZDizudpHZozJ1aTeDYMl458bHtd1zqdY8alWiSGKo8lTYFARCKQd6jlJeo4J8fX0su_Yr5TxB6hjKNstyYYKSAL7jK_TLPxm4N4WOh0"
+          alt="Carte de Paris"
         />
-        <div
-          class="absolute inset-0 flex items-center justify-center pointer-events-none"
-        >
-          <div
-            class="w-12 h-12 bg-primary flex items-center justify-center rounded-full shadow-2xl"
-          >
-            <span
-              class="material-symbols-outlined text-tertiary-fixed-dim"
-              style="font-variation-settings: &quot;FILL&quot; 1"
-              >location_on</span
-            >
+        <div class="map-overlay"></div>
+        <div class="map-pin">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
+            />
+          </svg>
+        </div>
+        <div class="map-label">
+          <div class="map-label-title">Super AgenceCom</div>
+          <div class="map-label-addr">42 Avenue des Arts, 75008 Paris</div>
+        </div>
+      </div>
+
+      <!-- CLIENTS -->
+      <div class="logos-wrap">
+        <div class="logos">
+          <span class="logos-label">Ils nous font confiance</span>
+          <div class="logos-row">
+            <span class="logo-name">Groupe L&amp;M</span>
+            <span class="logo-name">Vantex Capital</span>
+            <span class="logo-name">Studio Forma</span>
+            <span class="logo-name">Meridian Co.</span>
+            <span class="logo-name">Arkhos Lab</span>
           </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <section class="cta-wrap">
+        <div class="cta-box">
+          <div>
+            <h2>Pas encore prêt ? Découvrez nos services.</h2>
+            <p>
+              Explorez notre expertise en stratégie, identité et narration avant
+              de nous contacter.
+            </p>
+          </div>
+          <a
+            href="services.html"
+            class="btn-dark"
+            style="padding: 11px 28px; flex-shrink: 0"
+          >
+            Voir nos services
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor">
+              <path
+                d="M1 8h14M9 2l6 6-6 6"
+                stroke="currentColor"
+                stroke-width="1.5"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
         </div>
       </section>
     </main>
-    <footer class="bg-[#f7f9fb] dark:bg-[#031631] w-full">
-      <div
-        class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8 py-20"
-      >
-        <div class="md:col-span-1">
-          <div
-            class="text-lg font-bold font-['Noto_Serif'] text-primary dark:text-white mb-6"
-          >
-            Super Agence Com
-          </div>
-          <p
-            class="text-xs text-on-surface-variant tracking-wider uppercase opacity-60"
-          >
-            Paris — Londres — Tokyo
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">Super AgenceCom</div>
+          <p class="footer-desc">
+            L'excellence stratégique et éditoriale pour les marques qui exigent
+            plus de leur présence.
           </p>
         </div>
-        <div class="space-y-4">
-          <h4
-            class="font-['Manrope'] text-sm uppercase tracking-widest text-[#031631] dark:text-[#e9c176] font-bold"
-          >
-            Réseaux
-          </h4>
-          <div class="flex flex-col space-y-2">
-            <a
-              class="font-['Manrope'] text-sm uppercase tracking-widest text-[#596374] dark:text-[#c5c6ce] hover:underline decoration-[#e9c176] underline-offset-4"
-              href="#"
-              >LinkedIn</a
-            >
-            <a
-              class="font-['Manrope'] text-sm uppercase tracking-widest text-[#596374] dark:text-[#c5c6ce] hover:underline decoration-[#e9c176] underline-offset-4"
-              href="#"
-              >Instagram</a
-            >
-          </div>
+        <div class="footer-col">
+          <h4>Agence</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="etudes.html">Études de cas</a></li>
+            <li><a href="apropos.html">À propos</a></li>
+            <li><a href="#">Carrières</a></li>
+          </ul>
         </div>
-        <div class="space-y-4">
-          <h4
-            class="font-['Manrope'] text-sm uppercase tracking-widest text-[#031631] dark:text-[#e9c176] font-bold"
-          >
-            Engagement
-          </h4>
-          <div class="flex flex-col space-y-2">
-            <a
-              class="font-['Manrope'] text-sm uppercase tracking-widest text-[#596374] dark:text-[#c5c6ce] hover:underline decoration-[#e9c176] underline-offset-4"
-              href="#"
-              >Newsletter</a
-            >
-            <a
-              class="font-['Manrope'] text-sm uppercase tracking-widest text-[#596374] dark:text-[#c5c6ce] hover:underline decoration-[#e9c176] underline-offset-4"
-              href="#"
-              >Carrières</a
-            >
-          </div>
+        <div class="footer-col">
+          <h4>Réseaux</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
         </div>
-        <div class="space-y-4">
-          <h4
-            class="font-['Manrope'] text-sm uppercase tracking-widest text-[#031631] dark:text-[#e9c176] font-bold"
-          >
-            Légal
-          </h4>
-          <p
-            class="font-['Manrope'] text-sm uppercase tracking-widest text-[#596374] dark:text-[#c5c6ce]"
-          >
-            © 2026 Super Agence Com. Développé par wibegin.
-          </p>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <address class="footer-address">
+            Bureau de Paris<br />
+            42 Avenue des Arts<br />
+            75008 Paris
+          </address>
+          <p class="footer-email">hello@superagencecom.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Super AgenceCom. Tous droits réservés.</p>
+        <div class="footer-legal">
+          <a href="#">Mentions légales</a>
+          <a href="#">Confidentialité</a>
         </div>
       </div>
     </footer>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("navMobile");
+        menu.classList.toggle("open");
+      }
+    </script>
   </body>
 </html>
